@@ -1,0 +1,42 @@
+<html>
+<head>
+
+<!--https://bxslider.com/-->
+  <!--bxsliderのcssリンク-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!--jQueryのJS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--bxSliderのJS-->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+  <!--bxSliderを使うためのJS-->
+  <script>
+    //自動再生 See options https://bxslider.com/options/
+    $(function(){
+        $('.bxslider').bxSlider({
+        auto: true,
+        autoControls: true,
+        stopAutoOnClick: true,
+        pager: true,
+        slideWidth: 600
+        });
+    });
+  </script>
+
+</head>
+
+<body>
+    
+    <div align="center">
+    <br>
+    <h1><b>Example of bxSlider (2) Auto Slide Show</b></h1>
+    <hr><br>
+        <div class="bxslider">
+          <div><img src="images/A.jpg"></div>
+          <div><img src="images/B.jpg"></div>
+          <div><img src="images/C.jpg"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

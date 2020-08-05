@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<!--https://bxslider.com/-->
+  <!--bxsliderのcssリンク-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!--jQueryのJS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--bxSliderのJS-->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+  <!--bxSliderを使うためのJS-->
+  <script>
+    //手動切り替え+キャプション付き See options https://bxslider.com/options/
+    $(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 600
+      });
+    });
+    </script>
+
+</head>
+
+<body>
+    
+    <div align="center">
+    <br>
+    <h1><b>Example of bxSlider (1) Manual Slide Show with Titles</b></h1>
+    <hr><br>
+        <div class="bxslider">
+          <div><img src="images/A.jpg" title="My house"></div>
+          <div><img src="images/B.jpg" title="Shirakawago"></div>
+          <div><img src="images/C.jpg" title="Hodaka Renpo"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
